@@ -235,3 +235,55 @@ console.log("5" < true); // false
 
 // 4.5 Перетворення рядків у числа
 
+// Метод Number.parseInt()
+console.log(Number.parseInt("5")); // 5 
+console.log(Number.parseInt("5.5")); // 5 
+console.log(Number.parseInt("5cm")); // 5 
+console.log(Number.parseInt("12qwe74")); // 12 
+console.log(Number.parseInt("12.46qwe79")); // 12 
+console.log(Number.parseInt("cm5")); // NaN 
+console.log(Number.parseInt("")); // NaN 
+console.log(Number.parseInt("qweqwe")); // NaN
+
+//Метод Number.parseFloat()
+
+console.log(Number.parseFloat("5")); // 5
+console.log(Number.parseFloat("5.5")); // 5.5
+console.log(Number.parseFloat("3.14")); // 3.14
+console.log(Number.parseFloat("5cm")); // 5
+console.log(Number.parseFloat("5.5cm")); // 5.5
+console.log(Number.parseFloat("12qwe74")); // 12
+console.log(Number.parseFloat("12.46qwe79")); // 12.46
+console.log(Number.parseFloat("cm5")); // NaN
+console.log(Number.parseFloat("")); // NaN
+console.log(Number.parseFloat("qweqwe")); // NaN
+
+// 4.6 Арифметичні функції
+
+console.log(Math.floor(1.3)); // 1
+console.log(Math.floor(1.7)); // 1
+
+console.log(Math.ceil(1.3)); // 2
+console.log(Math.ceil(1.7)); // 2
+
+console.log(Math.round(1.3)); // 1
+console.log(Math.round(1.7)); // 2
+
+console.log(Math.max(20, 10, 50, 40)); // 50
+
+console.log(Math.min(20, 10, 50, 40)); // 10
+
+console.log(Math.random());
+
+// 4.7 Дробове число
+
+console.log(0.1 + 0.2);
+
+console.log((0.1 * 10 + 0.2 * 10) / 10); // 0.3
+
+console.log((0.1 + 0.2).toFixed(1)); // "0.3"
+console.log((5).toFixed(2));  //  "5.00"
+console.log((8.762195).toFixed(4));  //  "8.7622"
+
+// 5. Functions
+
