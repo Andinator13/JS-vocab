@@ -38,7 +38,7 @@ const description = 'JavaScript is awesome!'; // String (рядок)
 
 console.log(description);
 
-const isModalOpen = true; // Boolean
+const isModalOpen = false; // Boolean
 
 console.log(isModalOpen);
 
@@ -125,4 +125,113 @@ console.log(1 + 2 + "4"); // "34"
 
 const message3 = "Welcome, " + userName + "!";
 console.log(message3);
+
+// 3.2 Перетворення типів: рядки
+
+// 3.2.1 Явне перетворення типів
+
+console.log(String(5)); // "5"
+console.log(String(true)); // "true"
+console.log(String(false)); // "false"
+console.log(String(null)); // "null"
+console.log(String(undefined)); // "undefined"
+
+// 3.2.2 Неявне перетворення типів
+
+console.log("5" + 3); // "53"
+console.log("5" + true); // "5true"
+console.log("5" + false); // "5false"
+console.log("5" + null); // "5null"
+console.log("5" + undefined); // "5undefined"
+
+// 3.3 Шаблонні рядки
+
+const guestName = "Stacy";
+const roomNumber = 207;
+const greeting = `Welcome ${guestName}, your room number is ${roomNumber}!`; // Інтерполяція
+console.log(greeting); // "Welcome Mango, your room number is 207!"
+
+// 3.4 Довжина рядка
+
+const productName = "Repair droid";
+
+// Якщо у змінній зберігається рядок
+console.log(productName.length); // 12
+
+// Якщо рядковий літерал
+console.log("Repair droid".length); // 12
+
+// 3.5 Індексація рядків
+
+const product = "Repair droid";
+console.log(product[0]); // 'R'
+console.log(product[5]); // 'r'
+console.log(product[11]); // 'd'
+
+const girl = "Slut"
+const lastElementIndex = girl.length - 1;
+console.log(girl[lastElementIndex]); // 't'
+
+console.log(girl[girl.length - 1]); // 't'
+
+
+// 4.1 Оператори порівняння
+
+const n = 2;
+const o = 5;
+
+console.log(n > o); // false
+console.log(o > n); // true
+console.log(n >= o); // false
+console.log(o >= n); // true
+
+console.log(n < o); // true
+console.log(o < n); // false
+console.log(n <= o); // true
+console.log(o <= n); // false
+
+// 4.2 Оператори несуворої рівності
+
+console.log(5 == 5); // true
+console.log(5 == 3); // false
+console.log(5 != 3); // true
+console.log(5 != 5); // false
+
+// 4.3 Оператори суворої рівності
+
+// Добре, приведення типів не виконується
+console.log(5 === 5); // true
+console.log(5 === "5"); // false
+console.log(5 !== "5"); // true
+console.log(5 !== 5); // false
+console.log(1 === true); // false
+console.log(1 !== true); // true
+
+// 4.4 Перетворення типів: числа
+
+console.log(Number("5")); // 5
+console.log(Number(true)); // 1
+console.log(Number(false)); // 0
+console.log(Number(null)); // 0
+
+console.log(Number(undefined)); // NaN
+console.log(Number("Jacob")); // NaN
+console.log(Number("25px")); // NaN
+
+
+//Арифметичні операції (+, -, *, /) виконують неявне перетворення типів.
+
+console.log("5" * 2); // 10
+console.log("10" - 5); // 5
+console.log(5 + true); // 6
+console.log(5 - true); // 4
+
+//У разі використання операторів порівняння (<, >, <=, >=) також виконується неявне перетворення типів. 
+console.log("10" > 5); // true
+console.log(10 > "5"); // true
+console.log(5 > true); // true
+console.log(5 < true); // false
+console.log("5" < true); // false
+
+// 4.5 Перетворення рядків у числа
 
