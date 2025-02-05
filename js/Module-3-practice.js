@@ -16,24 +16,24 @@
 
 
 
-const bestSellers = ["Jaws", "Dune", "The Shining", "Jurassic Park", "Sex and the City"];
+// const bestSellers = ["Jaws", "Dune", "The Shining", "Jurassic Park", "Sex and the City"];
 
-console.log(bestSellers[2]);
-console.log(bestSellers[4]);
+// console.log(bestSellers[2]);
+// console.log(bestSellers[4]);
 
-bestSellers[2] = "Christine";
-bestSellers[4] = "Trading up";
+// bestSellers[2] = "Christine";
+// bestSellers[4] = "Trading up";
 
-console.log(bestSellers[2]);
-console.log(bestSellers[4]);
+// console.log(bestSellers[2]);
+// console.log(bestSellers[4]);
 
-console.log(bestSellers.length);
+// console.log(bestSellers.length);
 
-if (bestSellers.length <= 5) {
-    console.log("Top 5 Bestsellers")
-} else {
-    console.log("Bestellers")
-}
+// if (bestSellers.length <= 5) {
+//     console.log("Top 5 Bestsellers")
+// } else {
+//     console.log("Bestellers")
+// }
 
 
 // const peterBencheley = bestSellers[0];
@@ -48,4 +48,39 @@ if (bestSellers.length <= 5) {
 // console.log(michaelChrichton);
 // console.log(candiceBushnell);
 
+// const planets1 = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
+// const lastElementIndex = planets1.length - 1;
+// const blueMarble = planets1[2];
+// // const bigDaddy = planets1.length - 4;
 
+
+
+// console.log(planets1[lastElementIndex]); // "Venus"
+// console.log(planets1[0]);
+// console.log(blueMarble);
+// // console.log(planets1[bigDaddy]);
+
+// function getLastElementMeta(array) {
+  
+//     const lastIndex = array.length - 1;
+//     const lastElement = array[lastIndex];
+    
+//     return [lastIndex, lastElement];
+
+// }
+
+// console.log(getLastElementMeta(["apple", "peach", "pear", "banana"]));
+
+function getExtremeElements(array) {
+
+  const firstElement = array[0];
+  const lastIndex = array.length -1;
+  const lastElement = array[lastIndex];
+
+  return [firstElement, lastElement];
+  
+}
+
+console.log(getExtremeElements([1, 2, 3, 4, 5]));
+console.log(getExtremeElements(["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]));
+console.log(getExtremeElements(["apple", "peach", "pear", "banana"]));

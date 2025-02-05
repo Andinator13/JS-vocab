@@ -37,10 +37,40 @@ if(planets.length >= 3) {
 
 const planets1 = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
 const lastElementIndex = planets1.length - 1;
-const blueMarble = planets1[2];
-const bigDaddy = planets1.length - 4;
 
 console.log(planets1[lastElementIndex]); // "Venus"
-console.log(planets1[0]);
-console.log(blueMarble);
-console.log(planets1[bigDaddy]);
+
+/** Присвоєння за посиланням і за значенням */
+
+let a = 5;
+
+let b = a;
+console.log(a); // 5
+console.log(b); // 5
+
+a = 10;
+console.log(a); // 10
+console.log(b); // 5 Значення b не змінилося, оскільки це окрема копія
+
+const c = ["Mango", "Poly"];
+const d = c;
+console.log(c); // ["Mango", "Poly"]
+console.log(d); // ["Mango", "Poly"]
+
+//Змінимо масив, замінивши елемент з індексом 1, використовуючи посилання з a.
+
+c[1] = "Jacob";
+console.log(c); // ["Mango", "Jacob"]
+console.log(d); // ["Mango", "Jacob"]
+
+d[0] = "Ajax";
+console.log(c); // ["Ajax", "Jacob"]
+console.log(d); // ["Ajax", "Jacob"]
+
+//Два масиви ніколи не дорівнюють один одному, навіть якщо вони порожні або в них однакові елементи.
+
+const arr1 = [1, 2, 3];
+const arr2 = [1, 2, 3];
+
+console.log(arr1 === arr2); // false
+console.log([] === []); // false
