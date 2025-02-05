@@ -9,7 +9,14 @@
 
 const mixed = ['apple', 10, true]; // масив з елементами різних типів
 
-const planets = ['Earth', 'Mars', 'Venus'];
-const firstElement = planets[0];
-console.log(firstElement); // 'Earth'
+// const planets = ['Earth', 'Mars', 'Venus'];
+// const firstElement = planets[0];
+// console.log(firstElement); // 'Earth'
+
+/** Перевизначення значення елемента */
+
+const planets = ['Earth', 'Mars', 'Venus', 'Uranus'];
+planets[0] = 'Jupiter';
+planets[2] = 'Neptune';
+console.log(planets); // ['Jupiter', 'Mars', 'Neptune', 'Uranus']
 
