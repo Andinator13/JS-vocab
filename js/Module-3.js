@@ -1,4 +1,4 @@
-/** Масив */
+/** 3.1 Масив */
 
 // const planets = ['Earth', 'Mars', 'Venus']; // масив рядків
 // const numbers = [1, 2, 3, 4, 5]; // масив чисел
@@ -74,3 +74,42 @@ const arr2 = [1, 2, 3];
 
 console.log(arr1 === arr2); // false
 console.log([] === []); // false
+
+/** Приведення типів: масиви */
+
+//Масив → Рядок
+
+const array = [1, true, "Poly"];
+console.log(String(array));// "1,true,Poly"
+console.log(array + "5"); // "1,true,Poly5"
+
+//Масив → Число
+
+console.log(Number([])); // 0
+console.log(Number([1])); // 1
+console.log(Number([1, 2, 3])); // NaN
+
+//Масив → Логічне значення (буль)
+
+//При перетворенні масиву в логічне значення будь-який масив, навіть порожній, перетворюється на true.
+
+const emptyArray = [];
+const nonEmptyArray = [1, 2, 3];
+
+console.log(Boolean(emptyArray)); // true
+console.log(Boolean(nonEmptyArray)); // true
+
+if(emptyArray) {
+	console.log("if is in progress")
+} else {
+	console.log("else is not performed")
+}
+
+if(nonEmptyArray) {
+	console.log("if is in progress")
+} else {
+	console.log("else is not performed")
+}
+
+
+/** 3.2 Методи масиву */
