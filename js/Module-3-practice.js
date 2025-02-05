@@ -27,14 +27,20 @@ bestSellers[4] = "Trading up";
 console.log(bestSellers[2]);
 console.log(bestSellers[4]);
 
+console.log(bestSellers.length);
+
+if (bestSellers.length <= 5) {
+    console.log("Top 5 Bestsellers")
+} else {
+    console.log("Bestellers")
+}
 
 
-
-const peterBencheley = bestSellers[0];
-const frankHerbert = bestSellers[1];
-const stephenKingNovel = bestSellers[2];
-const michaelChrichton = bestSellers[3];
-const candiceBushnell = bestSellers[4];
+// const peterBencheley = bestSellers[0];
+// const frankHerbert = bestSellers[1];
+// const stephenKingNovel = bestSellers[2];
+// const michaelChrichton = bestSellers[3];
+// const candiceBushnell = bestSellers[4];
 
 // console.log(peterBencheley);
 // console.log(frankHerbert);
