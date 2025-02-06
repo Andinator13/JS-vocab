@@ -113,3 +113,32 @@ if(nonEmptyArray) {
 
 
 /** 3.2 Методи масиву */
+
+// Метод join()
+
+// const words = ["JavaScript", "is", "amazing"];
+// console.log(words.join("")); // 'JavaScriptisamazing'
+// console.log(words.join(" ")); // 'JavaScript is amazing'
+// console.log(words.join("-")); // 'JavaScript-is-amazing'
+
+function transformString(string) {
+	const words = string.split("_");
+	return words.join("-");
+}
+
+console.log(transformString("user_age")); // "user-age"
+console.log(transformString("price_per_droid")); // "price-per-droid"
+
+//Метод split()
+
+const name = "Mango";
+const letters = name.split("");
+console.log(letters); // ["M", "a", "n", "g", "o"]
+
+const message = "JavaScript essentials";
+const words = message.split(" ");
+console.log(words); // ["JavaScript", "essentials"]
+
+const slug = "amazing-french-recipes";
+const slugParts = slug.split("-");
+console.log(slugParts); // ["amazing", "french", "recipes"]

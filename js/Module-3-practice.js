@@ -71,16 +71,50 @@
 
 // console.log(getLastElementMeta(["apple", "peach", "pear", "banana"]));
 
-function getExtremeElements(array) {
+// function getExtremeElements(array) {
 
-  const firstElement = array[0];
-  const lastIndex = array.length -1;
-  const lastElement = array[lastIndex];
+//   const firstElement = array[0];
+//   const lastIndex = array.length -1;
+//   const lastElement = array[lastIndex];
 
-  return [firstElement, lastElement];
+//   return [firstElement, lastElement];
+  
+// }
+
+// console.log(getExtremeElements([1, 2, 3, 4, 5]));
+// console.log(getExtremeElements(["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]));
+// console.log(getExtremeElements(["apple", "peach", "pear", "banana"]));
+
+
+// const bestSellers = ["Jaws", "Dune", "The Shining", "Jurassic Park", "Sex and the City"];
+
+// console.log(bestSellers.join(", followed by "));
+
+// function changeCase(string) {
+//   const userNames = string.split("_");
+
+//   return userNames.join("-");
+
+// }
+
+// console.log(changeCase("mike_stoklasa"));
+
+// function getLength(array) {
+ 
+//   return array.join("").length;
+// }
+
+// console.log(getLength(["Mango", "hurries", "to", "the", "train"]))
+// console.log(getLength(["M", "a", "n", "g", "o"]))
+// console.log(getLength(["top", "picks", "for", "you"]))
+
+function calculateEngravingPrice(message, pricePerWord) {
+
+  
   
 }
 
-console.log(getExtremeElements([1, 2, 3, 4, 5]));
-console.log(getExtremeElements(["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]));
-console.log(getExtremeElements(["apple", "peach", "pear", "banana"]));
+console.log(calculateEngravingPrice("JavaScript is in my blood", 10));
+console.log(calculateEngravingPrice("JavaScript is in my blood", 20));
+console.log(calculateEngravingPrice("Web-development is creative work", 40));
+console.log(calculateEngravingPrice("Web-development is creative work", 20));
