@@ -2,9 +2,11 @@
  * 
  */
 
-let count = 0;
+let count = 13;
 
-while (count < 10) {
+count = 3;
+
+while (count < 21) {
   
     count **= 2;
     
