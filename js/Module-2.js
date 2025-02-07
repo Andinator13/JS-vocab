@@ -1,18 +1,17 @@
 /** Цикли
- * 
+ *
  */
 
 // let count = 0;
 
 // while (count < 10) {
-  
+
 //     count += 2;
-    
+
 //     console.log(`Tell me why: ${count}`);
 // }
 
 // console.log(`Count: ${count}`);
-
 
 /** Задача: Реєстрація у готелі */
 
@@ -50,3 +49,61 @@
 
 /** Цикл for */
 
+// for (let i = 0; i <= 20; i += 5) {
+//   console.log(i);
+// }
+
+// for (let i = 20; i >= 0; i -= 5) {
+//   console.log(i);
+// }
+
+// function sumUpTo(number) {
+//   let sum = 0;
+
+//   for (let i = 0; i <= number; i += 1) {
+//     sum += i;
+//   }
+
+//   return sum;
+// }
+
+// console.log(sumUpTo(5)); // 15
+// console.log(sumUpTo(10)); // 55
+// console.log(sumUpTo(0)); // 0
+
+
+/** Інкремент і декремент */
+
+// Префіксний інкремент
+
+// let x = 5;
+// const y = ++x;
+// console.log(x); // 6
+// console.log(y); // 6
+
+// Постфіксний інкремент
+
+// let x = 5;
+// const y = x++;
+// console.log(x); // 6
+// console.log(y); // 5
+
+// Префіксний декремент
+
+// let x = 5;
+// const y = --x;
+// console.log(x); // 4
+// console.log(y); // 4
+
+// Постфіксний декремент
+
+// let x = 5;
+// const y = x--;
+// console.log(x); // 4
+// console.log(y); // 5
+
+for (let i = 0; i <= 5; i++) {
+  console.log(i);
+}
+
+/** Оператор break */
