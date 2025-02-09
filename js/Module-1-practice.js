@@ -158,9 +158,46 @@
 // console.log(a1);
 
 
-function sayHi(name) {
-    const message = `Hello ${name}!`;
-    return message;
+// function sayHi(name) {
+//     const message = `Hello ${name}!`;
+//     return message;
+// }
+
+// document.body.textContent = sayHi("Alice")
+
+// function alert(args) {
+//   console.log(`%c${args}`, "color: yellow;");
+// }
+
+// alert()
+
+// function alert(args) {
+//     console.log(`%c${args}`, "color: red; font-size: 16px;");
+//     new Audio("https://www.myinstants.com/media/sounds/vine-boom.mp3").play();
+// }
+  
+// alert()
+
+// const str = "Howdy";
+
+// console.log(str);
+
+// function greeting() {
+//     console.log(str);
+// }
+
+// greeting();
+
+// function calcBMI(weight, height) {
+
+    
+//     return `${Math.round(weight / (Math.sqrt(height)))}%`
+    
+// }
+
+function calcBMI(weight, height) {
+    
+    return `${(Number.parseFloat(weight.replace(",", ".")) / Number.parseFloat(height.replace(",", ".") ** 2)).toFixed(1)}%`
 }
 
-document.body.textContent = sayHi("Alice")
+console.log(calcBMI("95", "1,8"));

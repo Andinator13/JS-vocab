@@ -202,17 +202,43 @@
 // // Функція calculateTotalPrice(order) приймає один параметр order - масив чисел. Доповни функцію так, щоб вона повертала загальну суму елементів з масиву order.
 
 
+// function getEvenNumbers(start, end) {
+
+//   const array = [];
+
+//   for (i = start; i <= end; i += 1) {
+
+//     if (i % 2 === 0) {
+
+//       array.push(i);
+
+//     }
+    
+
+//   }
+
+//   return array;
+
+// }
+
 function getEvenNumbers(start, end) {
-
-  const array = [];
-
-
   
-  return array
+  return array = []; for (i = start; i <= end; i += 1) {
+
+    if (i % 2 === 0) {
+      array.push(i);
+    }
+  }
 
 }
 
- console.log(getEvenNumbers(2, 5));
+console.log(getEvenNumbers(2, 5));
+ console.log(getEvenNumbers(3, 11));
+console.log(getEvenNumbers(6, 12));
+ console.log(getEvenNumbers(8, 8));
+ console.log(getEvenNumbers(7, 7));
+ 
+ 
  
 
 // Функція getEvenNumbers(start, end) має два параметри start та end, які є цілими числами. 
