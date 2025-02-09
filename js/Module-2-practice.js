@@ -87,24 +87,75 @@
 //Використовуючи цикл for,  повертала суму всіх цілих чисел від одиниці до цього числа включно. Наприклад, якщо number дорівнює 3, то сума - це 1 + 2 + 3, тобто 6.
 
 
-function calculateEvenTotal(number) { 
+// function calculateEvenTotal(number) {
 
-    let sum = 0;
+//     let sum = 0;
     
-    for (i = 1; i <= number; i++) {
+//     for (i = 1; i <= number; i++) {
 
-        if (i % 2 === 0) {
-            sum += i;
-        }
-    }
+//         if (i % 2 === 0) {
+//             sum += i;
+//         }
+//     }
     
-    return sum
+//     return sum
+// }
+
+// console.log(calculateEvenTotal(1));
+// console.log(calculateEvenTotal(3));
+// console.log(calculateEvenTotal(7));
+// console.log(calculateEvenTotal(18));
+// console.log(calculateEvenTotal(27));
+// console.log(calculateEvenTotal());
+
+
+// function add() {
+
+// //     let sum = 0;
+
+// //     for (let i = 0; i <= 10; i += 1) {
+
+// //         sum += 1;
+
+// //         // console.log(sum);
+        
+
+// //     }
+    
+// //     return sum
+// // }
+
+// // console.log(add());
+
+
+// console.log("Mary had a little lamb!");
+
+// const hours = 1;
+// const minutes = 33;
+// let time = '';
+
+// // if (minutes === 0) {
+// //     time = `${hours} г.`
+    
+// // } else {
+// //     time = `${hours} г. ${minutes} хв.`
+// // }
+
+// minutes === 0 ? time = `${hours} г.` : time = `${hours} г. ${minutes} хв.`
+
+// console.log(time);
+
+const daysLeft = 5; 
+let deadline = '';
+
+if (daysLeft === 0) {
+    deadline = 'Today';
+} else if (daysLeft === 1) {
+    deadline = 'Tomorrow';
+} else if (daysLeft === 2) {
+    deadline = 'Overmorrow';
+} else if (daysLeft > 2) {
+    deadline = 'Date in the Future';
 }
 
-console.log(calculateEvenTotal(1));
-console.log(calculateEvenTotal(3));
-console.log(calculateEvenTotal(7));
-console.log(calculateEvenTotal(18));
-console.log(calculateEvenTotal(27));
-console.log(calculateEvenTotal());
-
+console.log(deadline);
