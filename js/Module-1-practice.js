@@ -195,9 +195,14 @@
     
 // }
 
-function calcBMI(weight, height) {
+// function calcBMI(weight, height) {
     
-    return `${(Number.parseFloat(weight.replace(",", ".")) / Number.parseFloat(height.replace(",", ".") ** 2)).toFixed(1)}%`
-}
+//     return `${(Number.parseFloat(weight.replace(",", ".")) / Number.parseFloat(height.replace(",", ".") ** 2)).toFixed(1)}%`
+// }
 
-console.log(calcBMI("95", "1,8"));
+// console.log(calcBMI("95", "1,8"));
+
+
+// let num = 13.29;
+
+// console.log(Number(parseFloat(num).toFixed(1)));
