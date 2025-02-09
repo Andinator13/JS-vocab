@@ -120,8 +120,47 @@
 // console.log("floor".length);
 // console.log("ceiling".length);
 
-let num = 14.3
-console.log(Math.round(num));
+// let num = 14.3
+// console.log(Math.round(num));
 
-num = 14.7
-console.log(Math.round(num));
+// num = 14.7
+// console.log(Math.round(num));
+
+/**
+ * Функції
+ * 
+ * -Оголошення та виклик функції
+ * -Параметри та аргументи
+ * -Повернення значення
+ */
+
+// function add(x, y) {
+//     const message = "Wazzuuup";
+//     console.log(message);
+//     console.log(5 + 3);
+//     console.log(x + y);
+    
+// }
+
+// add(1208, 1541);
+
+// function add(x, y) {
+
+//     return x + y;
+// }
+
+// // add(13, 21);
+
+// // console.log(add(13, 21));
+
+// const a1 = add(131, 25);
+
+// console.log(a1);
+
+
+function sayHi(name) {
+    const message = `Hello ${name}!`;
+    return message;
+}
+
+document.body.textContent = sayHi("Alice")
