@@ -1,3 +1,5 @@
+'use strict'
+
 /** Цикли
  * 
  */
@@ -145,17 +147,92 @@
 
 // console.log(time);
 
-const daysLeft = 5; 
-let deadline = '';
+// const daysLeft = 5;
+// let deadline = '';
 
-if (daysLeft === 0) {
-    deadline = 'Today';
-} else if (daysLeft === 1) {
-    deadline = 'Tomorrow';
-} else if (daysLeft === 2) {
-    deadline = 'Overmorrow';
-} else if (daysLeft > 2) {
-    deadline = 'Date in the Future';
-}
+// if (daysLeft === 0) {
+//     deadline = 'Today';
+// } else if (daysLeft === 1) {
+//     deadline = 'Tomorrow';
+// } else if (daysLeft === 2) {
+//     deadline = 'Overmorrow';
+// } else if (daysLeft > 2) {
+//     deadline = 'Date in the Future';
+// }
 
-console.log(deadline);
+// console.log(deadline);
+
+/**
+ * Логічні оператори
+ * 
+ * - Перетоврення типів: логічне
+ * - &&
+ * - ||
+ * - !
+ * 
+ */
+
+// console.log(Boolean(false));
+// console.log(Boolean(NaN));
+// console.log(Boolean(null));
+// console.log(Boolean(undefined));
+// console.log(Boolean(0));
+// console.log(Boolean(''));
+
+
+// console.log(Boolean(true));
+// console.log(Boolean(3));
+// console.log(Boolean(3.14));
+// console.log(Boolean(-2));
+// console.log(Boolean("false"));
+// console.log(Boolean(" "));
+
+// console.log("first" && "last");
+// console.log(null && "last");
+// console.log("first" && undefined);
+// console.log(null && false);
+
+// console.log("first" && "last");
+// console.log("first" || "last");
+
+// console.log(null && "last");
+// console.log(null || "last");
+
+// console.log("first" && undefined);
+// console.log("first" || undefined);
+
+// console.log(null && false);
+// console.log(null || false);
+
+// console.log(!true);
+// console.log(!5);
+// console.log(!null);
+
+
+// const sub = "free";
+// let canConnect;
+
+// if (sub === "pro" || sub === "vip") {
+//     canConnect = true;
+// } else {
+//     canConnect = false;
+// }
+
+// const sub = "pro";
+// let canConnect;
+
+// canConnect = sub === "pro" || sub === "vip" ? true : false;
+
+// console.log(canConnect);
+
+// const sub = "vip";
+// let canConnect = sub === "pro" || sub === "vip";
+
+// console.log(canConnect);
+
+
+
+
+
+
+
