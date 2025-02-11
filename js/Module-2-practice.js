@@ -231,8 +231,120 @@
 // console.log(canConnect);
 
 
+// const isOnline = false;
+// const isFriend = true;
+// const isDnd = false;
+
+// const canOpenChat = isOnline && isFriend && !isDnd;
+
+// console.log('Можна відкрити чат', canOpenChat);
+
+/**
+ * Методи рядків
+ * - slice
+ * - toLowerCase/toUpperCase
+ * - includes
+ * - startsWith/endsWith
+ * - indexOf
+ * - trim
+ */
+
+// const user = 'Alice Franko';
+
+// // const str = user.slice(0, 5);
+
+// // console.log(str);
+
+// // const str = user.toLowerCase();
+
+// // console.log(str);
+
+// const str = user.includes();
+
+// console.log(str);
+
+// let link = 'https://my-site.com/about';
+
+// const str = link.endsWith('/');
+
+// console.log(str);
+
+// if (!str) {
+//     console.log(`${link}/`);
+    
+// } else {
+//     console.log(link);
+    
+// }
+
+// let link = 'https://my-site.com/about';
+
+// if (!link.endsWith('/')) {
+//     console.log(`${link}/`);
+// }
+
+// let link = 'https://my-site.com/about';
+
+// if (!link.endsWith('/')) {
+//     link += '/';
+// }
+
+// console.log(link);
 
 
+// let link = 'https://my-site.ua.com/about';
+
+// if (!link.endsWith('/') && link.includes('my-site')) {
+//     link += '/';
+// }
+
+// console.log(link);
 
 
+// let link = 'https://my-site.ua.com/about';
+
+// link = !link.endsWith('/') && link.includes('my-site') ? link += '/' : link
+
+// console.log(link);
+
+
+// const keyWord = 'best prices';
+// const taboo1 = 'too expensive';
+// const taboo2 = 'stupid';
+
+// const str1 = "We're selling top-notch laptops at the BEST PRICES in the market!";
+
+// const str2 = "Omg, I've tried to purchase a laptop from this STUpid website and it was just waaay tooo expensiveee!";
+
+// // console.log(str1.toLowerCase().includes(keyWord));
+// // console.log(str1.includes(taboo1));
+// // console.log(str1.includes(taboo2));
+
+// console.log(str2.includes(taboo1));
+// console.log(str2.toLowerCase().includes(taboo2));
+
+
+/**
+ * Цикли
+ * 
+ * - Цикл for
+ * - Відлік від 0 до N
+ * - Зворотній відлік від 0 до N
+ * - Збільшення/зменшення лічильника на 2+
+ * - Інкремент і декремент
+ * - Цикли while і do...while
+ */
+
+// console.log('before');
+
+// for (let i = 0; i < 3; i += 1) {
+//     console.log(i);
+    
+// }
+
+// console.log('after');
+
+// const str1 = 'We're the best';
+
+// const str2 = "We're the best";
 
