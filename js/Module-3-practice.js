@@ -413,8 +413,28 @@ const fruits = ["Apple", "Grapes", "Peach", "Banana", "Lemon"];
   
 // }
 
-// for (let i = 1; i < fruits.length; i++) {
+// for (let i = 0; i < fruits.length; i++) {
 //   // console.log(i);
-//   console.log(`${i}: ${fruits[i]}`);
+//   console.log(`${i + 1}: ${fruits[i]}`);
    
 // }
+
+/** 
+ * Напиши скрипт, який підраховує суму всіх парних чисел у
+ * масиві. 
+ */
+
+
+// const numbers = [1, 5, 8, 9, 12, 4, 15, 27, 30, 18, 14];
+
+// let sum = 0;
+
+// for (const number of numbers) {
+//   if (!(number % 2)) {
+//     sum += number;
+//   }
+// }
+
+// console.log(sum);
+
+
