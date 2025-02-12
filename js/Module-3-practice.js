@@ -262,3 +262,159 @@
  * - Перевизначення
  */
 
+// const courses = []; // літерал масиву
+
+// console.log(courses);
+
+// const countries = ["India", "Pakistan", "Bangladesh", "Nepal"]; // індексована сутність
+
+// console.log(countries);
+// console.table(countries);
+
+
+// const brands = ["Adidas", "Reebok", "Samsung", "Zara"];
+
+// console.log(brands);
+
+// brands[2] = "Balenciaga";
+
+// console.log(brands);
+
+
+// const message = "Duck!";
+
+// console.log(message);
+
+// message[0] = "F";
+
+// console.log(message);
+
+
+/**
+ * Передача за посиланням і за значенням
+ * 
+ * Примітиви і складні типи
+ * Посилальна рівність (referential equality)
+ */
+
+/**
+ * Методи масиву
+ * 
+ * - join
+ * - split
+ * - slice
+ * - concat
+ * - indexOf
+ * - push/pop
+ */
+
+// const courses = ["HTML", "CSS", "JS", "React", "Postgres"];
+
+// const str = courses.join(" ");
+
+// console.log(str);
+
+// const newArr = str.split(" ");
+
+// console.log(newArr);
+
+// const Arr = courses.slice(0, 2);
+
+// const Arr = courses.slice(-2);
+
+// console.log(Arr);
+
+// const newArr = ["Data Analytics", "UX Designer"];
+
+// const Arr = courses.concat(newArr, ["Product Designer", "Digital Marketing"]);
+
+// console.log(Arr);
+
+// const slice = Arr.slice(-4);
+// const slice2 = Arr.slice(0, 5);
+// console.log(slice);
+// console.log(slice2);
+
+// console.log(courses.indexOf("React"));
+
+// const wow = courses.push("hehehe");
+
+// // console.log(wow);
+
+// const res = courses.pop();
+
+// console.log(res);
+
+/**
+ * Ітерація по масиву
+ * 
+ * - Ітерація по масиву циклом for
+ * - Метод includes
+ * - Цикл for...of
+ * - Різниця у використанні for і for...of
+ */
+
+
+// const courses = ["HTML", "CSS", "JS", "React", "Postgres"];
+
+// for (let i = 0; i < courses.length; i++) {
+//   // console.log(i);
+//   // console.log(courses[i]);
+//   courses[i] += `-${i}`;
+  
+// }
+
+// console.log(courses);
+
+// for (const course of courses) {
+//   console.log(course);
+  
+// }
+
+// const courses = ["HTML", "CSS", "JS", "React", "Postgres"];
+
+// console.log(courses.includes("HTML"));
+// console.log(courses.includes("html"));
+
+
+/**
+ * Напиши скрипт для обчислення площі прямокутника зі сторонами, значення яких зберігаються у змінній values у вигляді рядка. 
+ * Значення гарантовано розділені пробілом. 
+ */
+
+// const values = "8 10";
+
+// const arr = values.split(" ");
+
+// console.log(arr);
+
+// const result = arr[0] * arr[1];
+// console.log(result);
+
+// const perim = (Number(arr[0]) + Number(arr[1])) * 2;
+// const perim = (+arr[0] + +arr[1]) * 2;
+
+// console.log(perim);
+
+
+/**
+ * Напиши скрипт для перебору масиву fruits.
+ * Для кожного елемента в масиві виведи в консоль рядок
+ * у форматі номер_елемента: значення_елемента.
+ * Нумерація елементів повинна починатися з 1.  * 
+ */
+
+const fruits = ["Apple", "Grapes", "Peach", "Banana", "Lemon"];
+
+// for (let i = 1; i < fruits.length; i++) {
+//   console.log(`${i}: ${fruits[i]}`);
+//   // console.log(fruits[i]);
+  
+  
+// }
+
+// for (let i = 1; i < fruits.length; i++) {
+//   // console.log(i);
+//   console.log(`${i}: ${fruits[i]}`);
+   
+// }
