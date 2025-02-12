@@ -348,3 +348,181 @@
 
 // const str2 = "We're the best";
 
+// function carsAvgYear() {
+
+// console.log(`The average car's year: ${carsAvgYear()}`);}
+
+// const name = 'Thanos';
+
+// const message = `We're all afraid of ${name}`;
+
+// console.log(message);
+
+
+
+// const str = "Hello";
+
+// // console.log(str[2]);
+
+// for (let i = 0; i < str.length; i+=1) {
+// console.log(str[i]);
+// }
+ 
+// const str = "Hello";
+
+// // console.log(str[2]);
+
+// for (let i = 0; i < str.length; i += 1) {
+//     if (str[i] === "l") {
+//         break;
+//     }
+// console.log(str[i]);
+//  }
+
+// ------------------- Інкремент
+
+/** Префіксний інкремент */
+
+// let a = 10;
+// const b = ++a;
+
+// console.log("a", a);
+// console.log("b", b);
+
+/** Постфіксний інкремент */
+
+// let a = 10;
+// const b = a++;
+
+// console.log("a", a);
+// console.log("b", b);
+
+// ------------------- Декремент
+
+/** Префіксний декремент */
+
+// let a = 10;
+// const b = --a;
+
+// console.log("a", a);
+// console.log("b", b);
+
+/** Постфіксний декремент */
+
+// let a = 10;
+// const b = a--;
+
+// console.log("a", a);
+// console.log("b", b);
+
+
+// -------------------- while
+
+// console.log("before");
+
+// let counter = 0;
+
+// while (counter < 5) {
+//     console.log(counter);
+    
+//     counter++;
+// }
+
+// console.log("after");
+
+// ------------------- do while
+
+// console.log("before");
+
+// let counter = 0;
+
+// do {
+//     console.log(counter);
+//     counter++
+
+// } while (counter < 5);
+
+// console.log("after");
+
+/** 
+ * Напиши цикл for, який виводить у консоль браузера 
+ * числа за зростанням від a до b,
+ * але тільки якщо число кратне 5.
+*/
+
+// const a = 20;
+// const b = 100;
+
+// for (let i = a; i < b; i++) {
+//     if(!(i % 5)) {
+//         console.log(i);
+//     }
+        
+// }
+
+// for (let i = b; i >= a; i--) {
+//     if (!(i % 5)) {
+//         console.log(i);
+        
+//     }
+// }
+
+
+/** 
+ * Напиши скрипт, який підраховує суму всіх парних чисел,
+ * які входять у діапазон чисел у змінних від min до max. 
+ * Наприклад, якщо min=0 і max=5, то діапазон 0-5, і в
+ * ньому два парних числа - 2 і 4, їх сума 6. 
+ */
+
+// function getEvenNumbers(min, max) {
+    
+//     let sum = 0;
+
+//     for (let i = min; i <= max; i++) {
+//         if (!(i % 2)) {
+//           sum += i;
+//         // console.log(i);
+        
+//         }
+             
+//     }
+
+//     return sum
+    
+// }
+
+// console.log(getEvenNumbers(1, 11));
+
+// const min = 0;
+// const max = 13;
+
+// let sum = 0;
+
+// for (let i = min; i <= max; i++) {
+//     if (i % 2 === 0) {
+//         sum += i;
+//         // console.log(i);
+        
+//     }
+// }
+
+// console.log(sum);
+
+
+// const min = 0;
+// const max = 6;
+
+// let sum = 0;
+
+// for (let i = min; i <= max; i++) {
+//     if (i % 2) {
+//         // console.log(i);
+//         continue
+//     }
+//     // console.log(i);
+    
+//     sum += i;
+// }
+
+// console.log(sum);
