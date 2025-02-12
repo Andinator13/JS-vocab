@@ -221,30 +221,44 @@
 
 // }
 
-function getEvenNumbers(start, end) {
+// function getEvenNumbers(start, end) {
   
-  return array = []; for (i = start; i <= end; i += 1) {
+//   return array = []; for (i = start; i <= end; i += 1) {
 
-    if (i % 2 === 0) {
-      array.push(i);
-    }
-  }
+//     if (i % 2 === 0) {
+//       array.push(i);
+//     }
+//   }
 
-}
+// }
 
-console.log(getEvenNumbers(2, 5));
- console.log(getEvenNumbers(3, 11));
-console.log(getEvenNumbers(6, 12));
- console.log(getEvenNumbers(8, 8));
- console.log(getEvenNumbers(7, 7));
+// console.log(getEvenNumbers(2, 5));
+//  console.log(getEvenNumbers(3, 11));
+// console.log(getEvenNumbers(6, 12));
+//  console.log(getEvenNumbers(8, 8));
+//  console.log(getEvenNumbers(7, 7));
  
  
  
 
-// Функція getEvenNumbers(start, end) має два параметри start та end, які є цілими числами. 
+// Функція getEvenNumbers(start, end) має два параметри start та end, які є цілими числами.
 
 // повертала масив усіх парних чисел від start до end.   r
 
 // Якщо жодного парного числа немає, то масив має бути пустим.
 
 // Парним вважається число, яке ділиться на 2 без остачі(10 % 2 === 0).Використовуй цикл for.
+
+
+
+/**
+ * Масиви
+ * 
+ * - Створення масивів
+ * - Доступ до елементів
+ * - Перевизначення значення елемента
+ * - Довжина масиву
+ * - Індекс останнього елемента
+ * - Перевизначення
+ */
+
