@@ -1,4 +1,4 @@
-
+'use strict'
 // // // // //Створи масив рядків і звернись до його елементів
 
 
@@ -404,7 +404,7 @@
  * Нумерація елементів повинна починатися з 1.  * 
  */
 
-const fruits = ["Apple", "Grapes", "Peach", "Banana", "Lemon"];
+// const fruits = ["Apple", "Grapes", "Peach", "Banana", "Lemon"];
 
 // for (let i = 1; i < fruits.length; i++) {
 //   console.log(`${i}: ${fruits[i]}`);
@@ -436,5 +436,152 @@ const fruits = ["Apple", "Grapes", "Peach", "Banana", "Lemon"];
 // }
 
 // console.log(sum);
+
+/**
+ * Напиши скрипт, який виводить у консоль ім'я та телефонний номер користувача.
+ * У змінних names та phones зберігаються рядки імен та телефонних номерів, 
+ * розділених комами. Порядковий номер імен та телефонів у рядках вказують
+ * на відповідність. Кількість імен та телефонів гарантовано однакова. 
+ */
+
+// const names = "Jacob,William,Solomon,Artemis";
+// const phones = "38001234567,38001112233,38005556677,380638868526";
+
+// const namesArr = names.split(",");
+// const phonesArr = phones.split(",");
+
+// // console.log(namesArr);
+// // console.log(phonesArr);
+
+// for (let i = 0; i < namesArr.length; i++) {
+//     console.log(`${namesArr[i]}: ${phonesArr[i]}`);
+    
+// }
+
+/**
+ * Напиши скрипт, який виводить у консоль усі слова рядка
+ * крім першого і останнього. Результуючий рядок не повинен починатися або закінчуватися символом пробілу.
+ * Скрипт повинен працювати для будь-якого рядка.  
+ */
+
+// const str = "     Welcome     to the     Future!   ";
+
+// const strArr = str.trim().split(" ");
+// // console.log(strArr);
+
+// const sliceArr = strArr.slice(1, strArr.length - 1).join(" ").trim();
+// console.log(sliceArr);
+
+
+// const str = "Houston";
+
+// const indexStr = str.indexOf("o");
+// console.log(indexStr);
+
+// const lenStr = str.length;
+// console.log(lenStr);
+
+
+/**
+ * Напиши скрипт пошуку найменшого числа у масиві. Код повинен працювати для будь-якого масиву чисел. Використовуй цикл для розв'язання
+ */
+
+// const values = [2, 17, 94, 1, 23, 37];
+// let min;
+
+// for (let i = 0; i < values.length; i++) {
+//     if (i === 0) {
+//         min = values[i];
+        
+//     } else if (values[i] < min) {
+//         min = values[i];
+//     }
+// }
+
+// console.log(min);
+
+
+// const num = "1991";
+
+// const numLen = num.length;
+// console.log(numLen);
+
+
+// const planets = ["Earth", "Mars", "Venus"];
+
+// // console.log(planets);
+
+// const length = planets.length;
+// // console.log(length);
+
+// for (let i = 0; i < planets.length; i++) {
+//     console.log(i);
+    
+// }
+
+// const fruits = ["apples", "bananas", "oranges"];
+
+/** Розгалуження if...else */
+
+// if (fruits.includes("banana")) {
+//   console.log("The array has an element banana");
+// } else {
+//   console.log("Array does not contain banana element");
+// }
+
+/** Тернарний оператор
+ * - без додаткових змінних;
+ */
+
+// fruits.includes("banana") ?  console.log("The array has an element banana") : console.log("Array does not contain banana element");
+
+/** з додатковими змінними */
+
+// const msg1 = "The array has an element banana";
+// const msg2 = "Array does not contain banana element";
+
+// fruits.includes("banana") ?  console.log(msg1) : console.log(msg2);
+
+// function checkStorage(storage, item) {
+   
+
+//     if (storage.includes(item.toLowerCase())) {
+//        return `${item.toLowerCase()} is available to order!`;
+        
+//     } else {
+//        return "Sorry! We are out of stock!";
+        
+//     }
+    
+// }
+
+// console.log(checkStorage(["apple", "plum", "pear"], "plum"));
+// console.log(checkStorage(["apple", "plum", "pear"], "pLuM"));
+// console.log(checkStorage(["apple", "plum", "pear"], "pear"));
+// console.log(checkStorage(["apple", "plum", "pear"], "pEAr"));
+// console.log(checkStorage(["apple", "plum", "pear"], "orange"));
+// console.log(checkStorage(["apple", "plum", "pear"], "carrot"));
+
+
+// function getCommonElements(array1, array2) {
+//     const newArr = [];
+
+//     for (let i = 0; i < array1.length; i++) {
+//         if (array2.includes(array1[i])) {
+//             newArr.push(array1[i]);
+//         }
+        
+//     }
+
+//     return newArr;
+// }
+
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+// console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+// console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
+
+
 
 
