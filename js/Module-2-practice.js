@@ -526,3 +526,44 @@
 // }
 
 // console.log(sum);
+
+
+// const start = 6;
+// const end = 17;
+// let number = 0;
+
+// for (let i = start; i < end; i++) {
+        
+//     if (!(i % 5)) {
+//         number = i;
+//         break;
+//     }
+
+//    }
+
+// console.log(number);
+
+// function findNumber(start, end, divisor) {
+
+//     let num = 0;
+
+//         for (let i = start; i <= end; i++)
+
+//         if (!(i % divisor)) {
+//             num = i;
+//             return num;
+//         }
+
+// }
+
+// console.log(findNumber(2, 6, 5));
+// console.log(findNumber(8, 17, 3));
+// console.log(findNumber(6, 9, 4));
+// console.log(findNumber(16, 35, 7));
+// console.log(findNumber());
+
+
+function calculateTotalPrice(order) {
+  
+}
+

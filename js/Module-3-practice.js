@@ -583,5 +583,12 @@
 // console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
 
 
+// const values = [2, 5, 13, 21, 27, 6, 54, 1949];
 
+// console.log(values);
+
+
+// const results = values.splice(2, values.length -1);
+// console.log(results);
+// console.log(values);
 
