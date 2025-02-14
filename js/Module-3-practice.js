@@ -592,3 +592,53 @@
 // console.log(results);
 // console.log(values);
 
+// function createReversedArray() {
+
+//     const args = Array.from(arguments);
+
+//     return args.toReversed();
+
+// }
+
+// function createReversedArray() {
+
+//     const reversedArr = [];
+
+//     for (let i = arguments.length - 1; i >= 0; i--) {
+//         reversedArr.push(arguments[i]);
+//     }
+// return reversedArr
+// }
+
+// console.log(createReversedArray(12, 85, 37, 4));
+// console.log(createReversedArray(164, 48, 291));
+// console.log(createReversedArray(412, 371, 94, 63, 176));
+// console.log(createReversedArray());
+
+
+
+
+// function calculateTax(amount, taxRate = 0.2) {
+//     return amount * taxRate;
+//  }
+
+// console.log(calculateTax(100, 0.1));
+// console.log(calculateTax(200, 0.1));
+// console.log(calculateTax(100, 0.2));
+// console.log(calculateTax(200, 0.2));
+// console.log(calculateTax(100, 0.3));
+// console.log(calculateTax(200, 0.3));
+// console.log(calculateTax(100));
+// console.log(calculateTax(200));
+
+// const multiply = function (x, y, z) {
+//   console.log(x * y * z);
+// };
+
+// multiply(1, 2, 3);
+
+
+
+
+
+

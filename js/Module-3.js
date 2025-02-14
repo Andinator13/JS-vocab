@@ -170,10 +170,10 @@
 // const secondArray = ["Mars", "Jupiter"];
 // const thirdArray = ["Saturn", "Neptune"];
 
-// console.log(firstArray.concat(secondArray, thirdArray)); 
+// console.log(firstArray.concat(secondArray, thirdArray));
 // // ['Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn', 'Neptune'];
 
-// console.log(firstArray.concat(thirdArray, secondArray)); 
+// console.log(firstArray.concat(thirdArray, secondArray));
 // // ['Mercury', 'Venus', 'Saturn', 'Neptune', 'Mars', 'Jupiter', ];
 
 // /** Метод indexOf() */
@@ -204,10 +204,52 @@
 
 // /** Ітерація по масиву */
 
-const planets = ["Earth", "Mars", "Venus"];
+// const planets = ["Earth", "Mars", "Venus"];
 
-for (let i = 0; i < planets.length; i += 1) {
-  console.log(planets[i]);
-}
+// for (let i = 0; i < planets.length; i += 1) {
+//   console.log(planets[i]);
+// }
+
+
+/**
+ * Функції (частина 2)
+ */
+
+// Псевдомасив arguments
+
+// function sum(a, b) {
+//   console.log(arguments);
+//   return a + b;
+// }
+
+// sum(2, 5);
+
+// Параметри за замовчуванням
+
+// function greet(username = "Guest") {
+//   console.log(`Hello, ${username}!`);
+// }
+
+// greet("Jacob"); // "Hello, Jacob!"
+// greet();        // "Hello, Guest!"
+
+
+// function count(from, to, step = 1) {
+//   console.log(`from: ${from}, to: ${to}, step: ${step}`);
+
+//   for (let i = from; i <= to; i += step) {
+//   // ...
+//   }
+// }
+
+// count(1, 15, 4); // "from: 1, to: 15, step: 4"
+// count(1, 15); // "from: 1, to: 15, step: 1"
+
+
+// Функціональний вираз (function expression)
+
+const multiply = function (x, y, z) {
+  console.log(x * y * z);
+};
 
 
