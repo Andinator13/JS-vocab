@@ -248,8 +248,68 @@
 
 // Функціональний вираз (function expression)
 
-const multiply = function (x, y, z) {
-  console.log(x * y * z);
-};
+// const multiply = function (x, y, z) {
+//   console.log(x * y * z);
+// };
+
+
+// Область видимості
+
+// const globalValue = 10;
+
+// console.log(globalValue); // 10
+
+// function foo() {
+//   console.log(globalValue); // 10
+// }
+
+// for (let i = 0; i < 5; i+=1) {
+//   console.log(globalValue); // 10
+
+//   if (i === 2) {
+//     console.log(globalValue); // 10
+//   }
+// }
+
+// Стек викликів
+
+// function fnA() {
+//   console.log("Log inside fnA function before calling fnB");
+//   fnB();
+//   console.log("Log inside fnA function after fnB call");
+// }
+
+// function fnB() {
+//   console.log("Log inside fnB function");
+// }
+
+// console.log("Log before calling fnA");
+// fnA();
+// console.log("Log after calling fnA");
+
+// // "Log before calling fnA"
+// // "Log inside fnA function before calling fnB"
+// // "Log inside fnB function"
+// // "Log inside fnA function after fnB call"
+// // "Log after calling fnA"
+
+
+// Stack frame (кадр стека, запис стека)
+
+// function bar() {
+//   console.log("bar");
+// }
+
+// function baz() {
+//   console.log("baz");
+// }
+
+// function foo() {
+//   console.log("foo");
+//   bar();
+//   baz();
+// }
+
+// foo();
 
 
