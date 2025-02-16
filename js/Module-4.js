@@ -245,6 +245,7 @@ console.log(values); // ["The Last Kingdom", "Bernard Cornwell", 8.38]
 
 
 
+
 /** Синтаксис spread і rest */
 
 //  Це спеціальний синтаксис, який дозволяє зібрати групу незалежних елементів у масив.
