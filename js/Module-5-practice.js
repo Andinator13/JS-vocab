@@ -89,7 +89,7 @@
 
 // console.log(arrowFoo(10));
 
-// const arrowFoo = (a, b) => a + b; 
+// const arrowFoo = (a, b) => a + b;
 
 // console.log(arrowFoo(10, 20));
 
@@ -98,3 +98,12 @@
 // });
 
 // console.log(arrowFoo(10, 20));
+
+function greet(name) {
+  console.log(`Hello, ${name}! I am ${this.person}`);
+}
+const person = "John";
+const context = {
+  person: "Alice",
+};
+greet.call(context, "Bob");
