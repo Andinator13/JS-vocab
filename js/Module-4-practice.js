@@ -317,8 +317,235 @@
 // };
 
 
+// function fillArray(min, max) {
+//   let arr = [];
+//   for (let i = min; i <= max; i += 2) {
+//     arr.push(i)
+//   }
+//   return arr;
+// }
 
-function getAllPropValues(propName) {
+// console.log(fillArray(2, 10));
+
+// const album = {
+//   title: "Mayhem",
+//   artist: "Lady Gaga",
+//   tracks: ["Disease", "Abracabra", "Garden of Eden", "Perfect Celebrity", "Vanish into You", "Killah", "Zombieboy", "LoveDrug", "How Bad Do U Wnt Me", "Don't Call Tonight", "Shadow of a Man", "The Beast", "Blade of Grass", "Do with a Smile"
+//   ],
+//   date: "7.3.2025"
+// }
+
+// album.artist = "Stefani Germanotta";
+// album.tracks.push("Can't Stop the High")
+
+// console.log(album);
+
+
+
+// const bestTrack = album.tracks[1];
+
+// const bestArtist = "Lady Gaga"
+
+// console.log(album["title"]);
+// console.log(album.artist);
+// console.log(bestTrack);
+// console.log(album[bestArtist]);
+
+
+// const obj = {
+//   name: "Alice",
+//   age: 25,
+//   skills: {
+//     html: true,
+//     css: true,
+//     js: false
+//   }
+// }
+
+// const newObj = obj.skills
+
+// console.log(newObj.html);
+
+// const title = "Mayhem";
+// const artist = "Lady Gaga";
+// const tracks = ["Disease", "Abracabra", "Garden of Eden", "Perfect Celebrity", "Vanish into You", "Killah", "Zombieboy", "LoveDrug", "How Bad Do U Wnt Me", "Don't Call Tonight", "Shadow of a Man", "The Beast", "Blade of Grass", "Do with a Smile"
+// ];
+// const date = "3.7.25";
+
+// const newAlbum = {
+//   title,
+//   artist,
+//   tracks,
+//   date
+// }
+
+// console.log(newAlbum);
+
+// const keyName1 = "artist";
+// const keyName2 = "title";
+
+// const newAlbum = {
+//   [keyName2]: "Mayhem",
+//   [keyName1]: "Lady Gaga",
+//   tracks,
+//   date
+// }
+
+// console.log(newAlbum);
+
+
+// function makeObject(key, value) {
+//   return {
+//     [key]: value
+//   }
+// }
+
+// console.log(makeObject("title", "Mayhem"));
+
+// const input = prompt("age");
+
+// const obj = {
+//   age: input
+// }
+
+// console.log(obj);
+
+
+// const feedback = {
+//   good: 5,
+//   neutral: 10,
+//   bad: 3
+// }
+
+// const keys = Object.keys(feedback)
+// const values = Object.values(feedback)
+
+// console.log(keys);
+// console.log(values);
+
+// let total = 0;
+
+// for (const value of values) {
+//   total += value
+// }
+
+// console.log(total);
+
+// const user = {
+//   name: "Alice",
+//   age: 20,
+//   hobby: "html",
+//   premium: true
+// }
+
+// user.mood = "happy";
+// user.hobby = "skydiving";
+// user.premium = false;
+
+// console.log(user);
+
+// const keys = Object.keys(user)
+
+// console.log(keys);
+
+// for (const key of keys) {
+//  console.log(`${key}: ${user[key]}`);
+//  }
+
+
+// const salaries = {
+//   John: 500,
+//   Paul: 500,
+//   George: 400,
+//   Ringo: 400
+// }
+
+// const values = Object.values(salaries);
+// console.log(values);
+
+// let sum = 0;
+
+// for (const value of values) {
+//   console.log(value);
+//   sum += value
+// }
+
+// console.log(sum);
+
+// const books = [
+//   { title: "The Last Kingdom", author: "Bernard Cornwell", rating: 8.2 },
+//   { title: "Beside Still Waters", author: "Robert Sheckley", rating: 9 },
+//   { title: "The Dream of a Ridiculous Man", author: "Fyodor Dostoevsky", rating: 6.8 }
+// ];
+
+// const titles = [];
+
+// for (const book of books) {
+// 	titles.push(book.title)
+// }
+
+// let total = 0;
+
+// for (const book of books) {
+//   total += book.rating
+// }
+
+// const averageRating = total / books.length;
+
+// console.log(titles);
+// console.log(total);
+// console.log(averageRating);
+
+
+
+// let total = 0;
+
+// for (key in feedback) {
+//   // console.log(key);
+//   total += feedback[key]
+// }
+
+// console.log(total);
+
+// const keys = Object.keys(feedback);
+
+// console.log(keys);
+
+// let total = 0;
+
+// for (const key of keys) {
+//   // console.log(key);
+//   total += feedback[key]
+// }
+
+// console.log(total);
+
+
+// function getAllPropValues(propName) {
+//   const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+
+//   const keyValues = [];
+
+//   for (const product of products) {
+//     if (propName in product) {
+//       keyValues.push(product[propName])
+//     }
+//   }
+  
+//   return keyValues
+// }
+
+// console.log(getAllPropValues("quantity"));
+// console.log(getAllPropValues("price"));
+// console.log(getAllPropValues("category"));
+
+
+function calculateTotalPrice(productName) {
   const products = [
     { name: "Radar", price: 1300, quantity: 4 },
     { name: "Scanner", price: 2700, quantity: 3 },
@@ -326,14 +553,24 @@ function getAllPropValues(propName) {
     { name: "Grip", price: 1200, quantity: 9 },
   ];
 
-  let totalPropName = 0;
+  
+  for (const product of products) {
+    if (productName == product.name) {
+      return product.price * product.quantity
+    } 
+         
+  }
 
-  for ()
+  return `Product ${productName} not found!`
 }
 
-console.log(getAllPropValues("quantity"));
-console.log(getAllPropValues("price"));
-console.log(getAllPropValues("category"));
+
+console.log(calculateTotalPrice("Radar"));
+console.log(calculateTotalPrice("Droid"));
+console.log(calculateTotalPrice("Grip"));
+console.log(calculateTotalPrice("Scanner"));
+console.log(calculateTotalPrice("Printer"));
+
 
 
 
